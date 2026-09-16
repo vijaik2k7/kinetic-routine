@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, BookOpen } from 'lucide-react';
 import { PhaseId, DayId, DAY_A_EXERCISES, DAY_B_EXERCISES } from '../data/workouts';
 import RestTimer from './RestTimer';
+import StepGuideModal from './StepGuideModal';
 import { sounds } from '../utils/audio';
 
 interface WorkoutPageProps {
@@ -20,6 +21,7 @@ export default function WorkoutPage({ day, phase, restOverride, onFinish }: Work
   
   const [completedSets, setCompletedSets] = useState<boolean[]>(new Array(phaseInfo.sets).fill(false));
   const [showRest, setShowRest] = useState(false);
+  const [showSteps, setShowSteps] = useState(false);
   const [cueIndex, setCueIndex] = useState(0);
 
   useEffect(() => {
@@ -92,9 +94,18 @@ export default function WorkoutPage({ day, phase, restOverride, onFinish }: Work
           />
         </div>
 
-        <h2 className="text-4xl font-serif leading-tight mb-3 text-[var(--text-primary)]">
-          {phaseInfo.name}
-        </h2>
+        <div className="flex items-start justify-between gap-3 mb-3">
+          <h2 className="text-3xl font-serif leading-tight text-[var(--text-primary)]">
+            {phaseInfo.name}
+          </h2>
+          <button
+            onClick={() => setShowSteps(true)}
+            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono text-[var(--accent)] bg-[var(--bg-card)] rounded-full border border-[var(--border-subtle)] hover:border-[var(--accent)] transition-all flex-shrink-0 mt-1 shadow-2xs"
+          >
+            <BookOpen size={13} />
+            <span>Steps</span>
+          </button>
+        </div>
         
         <div className="flex items-center gap-3 mb-6">
           <div className="font-mono text-sm text-[var(--text-secondary)]">
@@ -146,6 +157,15 @@ export default function WorkoutPage({ day, phase, restOverride, onFinish }: Work
         <RestTimer 
           duration={restOverride || phaseInfo.rest} 
           onComplete={() => setShowRest(false)} 
+        />
+      )}
+
+      {showSteps && (
+        <StepGuideModal
+          exerciseName={phaseInfo.name}
+          imageName={exercise.image}
+          steps={exercise.steps}
+          onClose={() => setShowSteps(false)}
         />
       )}
     </div>
