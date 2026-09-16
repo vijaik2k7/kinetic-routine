@@ -33,144 +33,144 @@ export const DAY_A_EXERCISES: Exercise[] = [
   {
     id: 'squat', image: 'squat.jpg', muscles: ['Quads', 'Glutes'], cues: ['Break at hips and knees together', 'Drive knees out over toes', 'Push through full foot', 'Keep chest tall'],
     steps: [
-      { title: 'Setup & Stance', detail: 'Stand tall with feet shoulder-width apart, toes pointed slightly outward (15–30°). Brace your core and keep your chest elevated.' },
-      { title: 'Hip Hinge & Descent', detail: 'Initiate the movement by breaking at your hips and knees simultaneously. Lower your body under control while tracking knees outward over your toes.' },
-      { title: 'Bottom Position', detail: 'Descend until your hip crease is parallel with or slightly below your knees. Keep your back flat and weight balanced across your full foot.' },
-      { title: 'Drive & Lockout', detail: 'Drive aggressively through the floor using your quads and glutes to return to standing. Squeeze glutes at full extension.' }
+      { title: 'Setup & Bar Placement', detail: 'Position bar across upper traps. Stand tall with feet shoulder-width apart, toes pointed slightly outward (15–30°).' },
+      { title: 'Hinge & Descent', detail: 'Inhale, brace core, and break at hips and knees simultaneously. Lower smoothly while tracking knees outward over toes.' },
+      { title: 'Bottom Position', detail: 'Descend until hip crease is parallel to or slightly below knees. Maintain flat back and chest high.' },
+      { title: 'Drive & Lockout', detail: 'Exhale and drive aggressively through midfoot and heels using quads and glutes to return to standing.' }
     ],
     phases: {
-      1: { name: 'Goblet Squats', sets: 3, reps: '8-10', rpe: '6-7', rest: 60 },
-      2: { name: 'Barbell Back Squats', sets: 3, reps: '6-8', rpe: '7-8', rest: 90 },
-      3: { name: 'Paused Back Squats', sets: 4, reps: '4-6', rpe: '8-9', rest: 120 }
+      1: { name: 'Barbell Back Squat (Technique)', sets: 3, reps: '8-10', rpe: '6-7', rest: 60 },
+      2: { name: 'Barbell Back Squat (Hypertrophy)', sets: 3, reps: '6-8', rpe: '7-8', rest: 90 },
+      3: { name: 'Paused Barbell Back Squat', sets: 4, reps: '4-6', rpe: '8-9', rest: 120 }
     }
   },
   {
     id: 'bench', image: 'bench.jpg', muscles: ['Chest', 'Triceps'], cues: ['Retract shoulder blades', 'Lower to lower sternum', 'Drive feet into floor', 'Maintain 45° elbow tuck'],
     steps: [
-      { title: 'Setup & Arch', detail: 'Lie flat on the bench, pull your shoulder blades down and back into the pad, and plant both feet firmly onto the floor.' },
-      { title: 'Unrack & Grip', detail: 'Unrack the weight directly over your upper chest with wrists straight and stacked over your elbows.' },
-      { title: 'Controlled Lowering', detail: 'Inhale deeply and lower the weight under strict control to your lower sternum, keeping elbows tucked at a 45° angle.' },
-      { title: 'Press & Finish', detail: 'Exhale as you drive through your feet and press the weight up and back toward your upper chest until your arms lock smoothly overhead.' }
+      { title: 'Setup & Arch', detail: 'Lie flat on bench, pull shoulder blades down and back into pad, and plant feet firmly flat on floor.' },
+      { title: 'Unrack & Lockout', detail: 'Grip bar slightly wider than shoulder-width. Unrack directly over upper chest with wrists straight over vertical forearms.' },
+      { title: 'Controlled Lowering', detail: 'Inhale deeply, lowering bar under control to touch lower sternum while keeping elbows tucked at a 45° angle.' },
+      { title: 'Press & Finish', detail: 'Exhale, drive feet into floor, and press bar straight up and slightly back until arms are fully extended.' }
     ],
     phases: {
-      1: { name: 'DB Bench Press', sets: 3, reps: '8-10', rpe: '6-7', rest: 60 },
-      2: { name: 'Barbell Bench Press', sets: 3, reps: '6-8', rpe: '7-8', rest: 90 },
-      3: { name: 'Heavy Barbell Bench', sets: 4, reps: '4-6', rpe: '8-9', rest: 120 }
+      1: { name: 'Barbell Bench Press (Technique)', sets: 3, reps: '8-10', rpe: '6-7', rest: 60 },
+      2: { name: 'Barbell Bench Press (Hypertrophy)', sets: 3, reps: '6-8', rpe: '7-8', rest: 90 },
+      3: { name: 'Heavy Barbell Bench Press', sets: 4, reps: '4-6', rpe: '8-9', rest: 120 }
     }
   },
   {
-    id: 'row', image: 'row.jpg', muscles: ['Lats', 'Rhomboids'], cues: ['Lead with elbows', 'Squeeze shoulder blades', 'Pause at peak contraction', 'Control the eccentric'],
+    id: 'row', image: 'row.jpg', muscles: ['Lats', 'Rhomboids'], cues: ['Hinge at hips with flat back', 'Pull with elbows back toward hips', 'Squeeze shoulder blades together', 'Control lowering phase'],
     steps: [
-      { title: 'Body Position', detail: 'Hinge at your hips with a flat spine or position your chest securely against the pad. Let your arms hang fully extended.' },
-      { title: 'Scapular Retraction', detail: 'Initiate the movement by pulling your shoulder blades back together before your elbows begin to flex.' },
-      { title: 'Drive Elbows Back', detail: 'Drive your elbows back toward your hip pockets, pulling the weight into your lower ribs or upper waist.' },
-      { title: 'Squeeze & Return', detail: 'Pause for a split second to squeeze your upper back and lats, then lower the weight under control back to full extension.' }
+      { title: 'Hinge Setup', detail: 'Stand with feet hip-width apart. Hinge forward at hips with torso near parallel to floor and spine flat.' },
+      { title: 'Scapular Retraction', detail: 'Grip bar overhand. Pull shoulder blades back together before flexing elbows.' },
+      { title: 'Drive to Lower Ribs', detail: 'Drive elbows back toward hip pockets, pulling bar into lower ribcage/abdomen.' },
+      { title: 'Squeeze & Lower', detail: 'Squeeze upper back at peak contraction for 1 second, then lower bar smoothly under control.' }
     ],
     phases: {
-      1: { name: 'Cable/Inverted Rows', sets: 3, reps: '8-10', rpe: '6-7', rest: 60 },
-      2: { name: 'Chest-Supported DB Rows', sets: 3, reps: '8-10', rpe: '7-8', rest: 90 },
-      3: { name: 'Pendlay Barbell Rows', sets: 4, reps: '6-8', rpe: '8-9', rest: 120 }
+      1: { name: 'Bent-Over Barbell Row (Technique)', sets: 3, reps: '8-10', rpe: '6-7', rest: 60 },
+      2: { name: 'Bent-Over Barbell Row (Hypertrophy)', sets: 3, reps: '8-10', rpe: '7-8', rest: 90 },
+      3: { name: 'Pendlay Barbell Row', sets: 4, reps: '6-8', rpe: '8-9', rest: 120 }
     }
   },
   {
-    id: 'rdl', image: 'rdl.jpg', muscles: ['Hamstrings', 'Glutes'], cues: ['Push hips back horizontally', 'Keep bar close to legs', 'Maintain flat back', 'Drive hips forward to lockout'],
+    id: 'rdl', image: 'rdl.jpg', muscles: ['Hamstrings', 'Glutes'], cues: ['Push hips back horizontally', 'Keep bar close to shins', 'Maintain flat back and soft knees', 'Drive hips forward to lockout'],
     steps: [
-      { title: 'Stance & Grip', detail: 'Stand upright holding the weight with a hip-width stance and knees unlocked ("soft knees").' },
-      { title: 'Horizontal Hip Hinge', detail: 'Push your hips backward as if trying to touch a wall behind you. Keep the weight grazing close to your legs.' },
-      { title: 'Hamstring Stretch', detail: 'Stop lowering when your hips reach maximum backward stretch (around shin height) while keeping your spine completely neutral.' },
-      { title: 'Glute Drive', detail: 'Drive your hips forward to push back to full standing height, squeezing your glutes firmly without leaning backward.' }
+      { title: 'Stance & Soft Knees', detail: 'Stand tall holding bar at thighs. Set feet hip-width apart with knees unlocked ("soft knees").' },
+      { title: 'Horizontal Hinge', detail: 'Push hips back as far as possible while keeping bar grazing close to legs and back flat.' },
+      { title: 'Hamstring Stretch', detail: 'Lower until hamstrings are fully stretched (around mid-shin height) without rounding spine.' },
+      { title: 'Hip Drive Lockout', detail: 'Drive hips forward to push back to standing, squeezing glutes hard at top lockout.' }
     ],
     phases: {
-      1: { name: 'DB Romanian Deadlifts', sets: 2, reps: '8-10', rpe: '6-7', rest: 60 },
-      2: { name: 'Barbell RDLs', sets: 3, reps: '8-10', rpe: '7-8', rest: 90 },
-      3: { name: 'Deficit Barbell RDLs', sets: 3, reps: '6-8', rpe: '8-9', rest: 120 }
+      1: { name: 'Barbell Romanian Deadlift (Light)', sets: 2, reps: '8-10', rpe: '6-7', rest: 60 },
+      2: { name: 'Barbell Romanian Deadlift (Hypertrophy)', sets: 3, reps: '8-10', rpe: '7-8', rest: 90 },
+      3: { name: 'Deficit Barbell RDL', sets: 3, reps: '6-8', rpe: '8-9', rest: 120 }
     }
   },
   {
-    id: 'legraise', image: 'legraise.jpg', muscles: ['Core', 'Obliques'], cues: ['Engage core before moving', 'No swinging', 'Curl pelvis at top', 'Exhale on contraction'],
+    id: 'legraise', image: 'legraise.jpg', muscles: ['Core', 'Lower Abs'], cues: ['Depress shoulders and engage lats', 'Tilt pelvis backward before moving', 'Raise knees or legs without swinging', 'Exhale hard at top contraction'],
     steps: [
-      { title: 'Core Engagement', detail: 'Hang from a bar or set up at the cable station. Flatten your lower lumbar curve by tilting your pelvis backward slightly.' },
-      { title: 'Initial Movement', detail: 'Without using momentum or swinging, contract your lower abdominals to draw your legs or cable through the movement path.' },
-      { title: 'Peak Flexion', detail: 'Raise your legs or rotate through your torso until your pelvis flexes toward your chest. Exhale hard at peak contraction.' },
-      { title: 'Controlled Eccentric', detail: 'Lower your legs or return the cable under a steady 2–3 second tempo to maintain continuous tension throughout your core.' }
+      { title: 'Dead Hang Setup', detail: 'Hang from pull-up bar with overhand grip. Pull shoulder blades down to stabilize shoulders.' },
+      { title: 'Pelvic Engagement', detail: 'Tilt pelvis backward slightly to flatten lower lumbar curve and activate lower abs.' },
+      { title: 'Controlled Raise', detail: 'Raise knees or legs up toward chest smoothly without using body momentum or swinging.' },
+      { title: 'Squeeze & Lower', detail: 'Squeeze abs at top flexion, then lower legs under 2-3 second tempo back to dead hang.' }
     ],
     phases: {
-      1: { name: 'Cable Woodchops', sets: 2, reps: '12-15', rpe: '6-7', rest: 30 },
-      2: { name: 'Hanging Leg Raises', sets: 2, reps: '12-15', rpe: '7-8', rest: 60 },
-      3: { name: 'Weighted Leg Raises', sets: 3, reps: '10-12', rpe: '8-9', rest: 60 }
+      1: { name: 'Hanging Knee Raise (Foundation)', sets: 2, reps: '10-12', rpe: '6-7', rest: 45 },
+      2: { name: 'Hanging Leg Raise (Overload)', sets: 3, reps: '10-12', rpe: '7-8', rest: 60 },
+      3: { name: 'Weighted Hanging Leg Raise', sets: 3, reps: '8-10', rpe: '8-9', rest: 60 }
     }
   }
 ];
 
 export const DAY_B_EXERCISES: Exercise[] = [
   {
-    id: 'deadlift', image: 'deadlift.jpg', muscles: ['Glutes', 'Hamstrings', 'Back'], cues: ['Wedge hips to bar', 'Pull slack out first', 'Push floor away', 'Lock out without hyperextending'],
+    id: 'deadlift', image: 'deadlift.jpg', muscles: ['Glutes', 'Hamstrings', 'Back'], cues: ['Shins 1 inch from bar over midfoot', 'Pull slack out of bar before lifting', 'Push floor away with quad drive', 'Lock out tall without leaning back'],
     steps: [
-      { title: 'Setup & Stance', detail: 'Stand with feet hip-width apart, shins 1 inch from the bar. Hinge down and take a shoulder-width grip.' },
-      { title: 'Wedge & Slack', detail: 'Lower your hips, lift your chest, and pull the slack out of the bar until your hamstrings and lats feel fully loaded.' },
-      { title: 'Push the Floor', detail: 'Drive your feet straight through the floor using quad power to move the bar upward until it clears your knees.' },
-      { title: 'Hinge Lockout', detail: 'Drive your hips forward into the bar and lock out tall with shoulders back and glutes squeezed tightly.' }
+      { title: 'Setup & Grip', detail: 'Stand with midfoot under bar, feet hip-width apart. Hinge down and take shoulder-width grip.' },
+      { title: 'Wedge & Tension', detail: 'Drop hips, pull chest up, and pull slack out of bar until hamstrings and lats build tension.' },
+      { title: 'Push the Floor', detail: 'Drive feet through floor using quad power until bar passes knees.' },
+      { title: 'Hinge Lockout', detail: 'Drive hips forward into bar, squeezing glutes tightly at top without hyperextending back.' }
     ],
     phases: {
-      1: { name: 'Trap-Bar Deadlifts', sets: 3, reps: '8-10', rpe: '6-7', rest: 60 },
-      2: { name: 'Conventional Deadlifts', sets: 3, reps: '5', rpe: '7-8', rest: 120 },
-      3: { name: 'Heavy Conventional DL', sets: 4, reps: '4-5', rpe: '8-9', rest: 180 }
+      1: { name: 'Conventional Deadlift (Technique)', sets: 3, reps: '6-8', rpe: '6-7', rest: 90 },
+      2: { name: 'Conventional Deadlift (Hypertrophy)', sets: 3, reps: '5', rpe: '7-8', rest: 120 },
+      3: { name: 'Heavy Conventional Deadlift', sets: 4, reps: '4-5', rpe: '8-9', rest: 180 }
     }
   },
   {
-    id: 'ohp', image: 'ohp.jpg', muscles: ['Shoulders', 'Triceps'], cues: ['Squeeze glutes and brace', 'Press bar clearing forehead', 'Lock elbows overhead', 'Lower to collarbone'],
+    id: 'ohp', image: 'ohp.jpg', muscles: ['Shoulders', 'Triceps'], cues: ['Squeeze glutes and brace core tight', 'Keep forearms strictly vertical', 'Press bar straight clearing forehead', 'Lock out directly over crown of head'],
     steps: [
-      { title: 'Rack Setup', detail: 'Clean or unrack the bar onto your front shoulders. Grip just outside shoulder-width with wrists stacked over vertical forearms.' },
-      { title: 'Pillar Activation', detail: 'Squeeze your glutes, lock your knees, and brace your abdominal wall to form a rigid, solid base.' },
-      { title: 'Vertical Press', detail: 'Lean your head back slightly and press the bar straight up close to your face until it clears your forehead.' },
-      { title: 'Overhead Lock', detail: 'Push your head back through under the bar ("look through the window") and lock your elbows straight overhead.' }
+      { title: 'Rack Setup', detail: 'Rest bar across front deltoids. Grip just outside shoulders with forearms vertical.' },
+      { title: 'Rigid Pillar', detail: 'Squeeze glutes, lock knees, and brace abdominals to create a solid torso pillar.' },
+      { title: 'Vertical Press', detail: 'Tilt head back slightly and press bar straight up close to face until clearing forehead.' },
+      { title: 'Head Through & Lockout', detail: 'Push head forward under bar ("look through window") and lock elbows overhead.' }
     ],
     phases: {
-      1: { name: 'Seated DB OHP', sets: 3, reps: '8-10', rpe: '6-7', rest: 60 },
-      2: { name: 'Standing Barbell OHP', sets: 3, reps: '6-8', rpe: '7-8', rest: 90 },
-      3: { name: 'Heavy Standing OHP', sets: 4, reps: '4-6', rpe: '8-9', rest: 120 }
+      1: { name: 'Standing Barbell OHP (Technique)', sets: 3, reps: '8-10', rpe: '6-7', rest: 60 },
+      2: { name: 'Standing Barbell OHP (Hypertrophy)', sets: 3, reps: '6-8', rpe: '7-8', rest: 90 },
+      3: { name: 'Heavy Standing Barbell OHP', sets: 4, reps: '4-6', rpe: '8-9', rest: 120 }
     }
   },
   {
-    id: 'pullup', image: 'pullup.jpg', muscles: ['Lats', 'Biceps'], cues: ['Depress scapula first', 'Drive elbows to hip pockets', 'Pull chest to bar', 'Lower to dead hang'],
+    id: 'pullup', image: 'pullup.jpg', muscles: ['Lats', 'Biceps'], cues: ['Start from full dead hang', 'Pull shoulder blades down first', 'Drive elbows down toward hip pockets', 'Touch upper chest to bar'],
     steps: [
-      { title: 'Dead Hang Setup', detail: 'Grab the bar with an overhand grip wider than shoulder-width. Let your body hang with arms completely extended.' },
-      { title: 'Scapular Depression', detail: 'Pull your shoulder blades down and back to engage your lats before flexing your elbows.' },
-      { title: 'Drive Chest to Bar', detail: 'Drive your elbows down toward your ribs as you pull your upper chest up toward the bar.' },
-      { title: 'Smooth Lower', detail: 'Pause briefly with your chin over the bar, then lower yourself smoothly back down into a full dead hang.' }
+      { title: 'Dead Hang', detail: 'Hang from bar with overhand grip wider than shoulders. Arms fully extended.' },
+      { title: 'Scapular Depression', detail: 'Pull shoulder blades down and back to engage lats before bending elbows.' },
+      { title: 'Drive Chest to Bar', detail: 'Drive elbows down toward ribs as you pull your upper chest to bar.' },
+      { title: 'Controlled Lowering', detail: 'Pause at top, then lower smoothly back down to full dead hang.' }
     ],
     phases: {
-      1: { name: 'Lat Pulldowns', sets: 3, reps: '8-10', rpe: '6-7', rest: 60 },
-      2: { name: 'Bodyweight Pull-Ups', sets: 3, reps: '6-8', rpe: '7-8', rest: 90 },
-      3: { name: 'Weighted Pull-Ups', sets: 4, reps: '4-6', rpe: '8-9', rest: 120 }
+      1: { name: 'Assisted / Bodyweight Pull-Up', sets: 3, reps: '6-8', rpe: '6-7', rest: 60 },
+      2: { name: 'Bodyweight Pull-Up', sets: 3, reps: '6-8', rpe: '7-8', rest: 90 },
+      3: { name: 'Weighted Pull-Up', sets: 4, reps: '4-6', rpe: '8-9', rest: 120 }
     }
   },
   {
-    id: 'lunge', image: 'lunge.jpg', muscles: ['Quads', 'Glutes'], cues: ['Elevate rear foot', 'Lower rear knee vertically', 'Track knee over middle toe', 'Push through front heel'],
+    id: 'lunge', image: 'lunge.jpg', muscles: ['Quads', 'Glutes'], cues: ['Place rear foot securely on bench', 'Lower rear knee straight down vertically', 'Track front knee over middle toe', 'Drive through front heel to stand'],
     steps: [
-      { title: 'Stance & Alignment', detail: 'Stand tall, then step into a split stance or elevate your rear foot onto a bench with hip-width spacing.' },
-      { title: 'Vertical Descent', detail: 'Keep your torso upright and lower your back knee straight down toward the floor under control.' },
-      { title: 'Knee Alignment', detail: 'Ensure your front knee tracks directly in line with your second toe and stays behind your toes at the bottom.' },
-      { title: 'Front Foot Drive', detail: 'Press firmly through your front heel and midfoot to drive back up to the starting position.' }
+      { title: 'Setup & Distance', detail: 'Stand 2 feet in front of bench. Place top of rear foot flat on bench with front foot planted.' },
+      { title: 'Vertical Descent', detail: 'Keep torso upright and lower rear knee straight down toward floor under control.' },
+      { title: 'Knee Tracking', detail: 'Ensure front knee stays aligned with middle toe and front thigh reaches parallel to floor.' },
+      { title: 'Front Leg Drive', detail: 'Press firmly through front heel and midfoot to drive back up to top starting position.' }
     ],
     phases: {
-      1: { name: 'DB Walking Lunges', sets: 2, reps: '8-10/leg', rpe: '6-7', rest: 60 },
-      2: { name: 'Bulgarian Split Squats', sets: 2, reps: '8-10/leg', rpe: '7-8', rest: 90 },
-      3: { name: 'Heavy Bulgarian SS', sets: 3, reps: '6-8/leg', rpe: '8-9', rest: 90 }
+      1: { name: 'Bulgarian Split Squats (Bodyweight)', sets: 2, reps: '8-10/leg', rpe: '6-7', rest: 60 },
+      2: { name: 'Bulgarian Split Squats (Dumbbell)', sets: 2, reps: '8-10/leg', rpe: '7-8', rest: 90 },
+      3: { name: 'Heavy Bulgarian Split Squats', sets: 3, reps: '6-8/leg', rpe: '8-9', rest: 90 }
     }
   },
   {
-    id: 'plank', image: 'plank.jpg', muscles: ['Core', 'Transverse Abs'], cues: ['Straight line head to heels', 'Tuck pelvis under', 'Squeeze glutes hard', 'Breathe steadily'],
+    id: 'plank', image: 'plank.jpg', muscles: ['Core', 'Transverse Abs'], cues: ['Elbows directly underneath shoulders', 'Posterior pelvic tilt (tuck tailbone)', 'Squeeze glutes and abdominals hard', 'Maintain straight line head to heels'],
     steps: [
-      { title: 'Forearm Alignment', detail: 'Place your forearms flat on the floor with elbows directly underneath your shoulders and feet hip-width apart.' },
-      { title: 'Pelvic Lock', detail: 'Tuck your tailbone slightly under into a posterior pelvic tilt to lock your lower back into a neutral position.' },
-      { title: 'Total Tension', detail: 'Contract your abdominals, squeeze your glutes, and push forearms into the floor to maintain a straight line head to heels.' },
-      { title: 'Diaphragmatic Breath', detail: 'Hold the rigid tension while taking steady, deep breaths in through your nose and out through your mouth.' }
+      { title: 'Setup', detail: 'Place forearms flat on floor with elbows directly under shoulders, feet hip-width apart on toes.' },
+      { title: 'Pelvic Lock', detail: 'Tuck tailbone slightly under into posterior pelvic tilt to flatten lower back and lock abs.' },
+      { title: 'Total Body Tension', detail: 'Contract quads, squeeze glutes, and press forearms into floor.' },
+      { title: 'Diaphragmatic Breath', detail: 'Maintain rigid posture while breathing steadily in through nose and out through mouth.' }
     ],
     phases: {
-      1: { name: 'Forearm Plank', sets: 2, reps: '30-45s hold', rpe: '6-7', rest: 30 },
-      2: { name: 'Ab Wheel Rollouts', sets: 3, reps: '8-10', rpe: '7-8', rest: 60 },
-      3: { name: 'Weighted Plank', sets: 3, reps: '45-60s hold', rpe: '8-9', rest: 60 }
+      1: { name: 'Forearm Plank (30s Hold)', sets: 2, reps: '30s hold', rpe: '6-7', rest: 30 },
+      2: { name: 'Forearm Plank (45s Hold)', sets: 3, reps: '45s hold', rpe: '7-8', rest: 60 },
+      3: { name: 'Weighted Forearm Plank', sets: 3, reps: '60s hold', rpe: '8-9', rest: 60 }
     }
   }
 ];
