@@ -10,10 +10,9 @@ export default {
       colors: {
         'bg-app': 'var(--bg-app)',
         'bg-card': 'var(--bg-card)',
-        'bg-muted': 'var(--bg-muted)',
         'text-primary': 'var(--text-primary)',
         'text-secondary': 'var(--text-secondary)',
-        'accent-terracotta': 'var(--accent-terracotta)',
+        accent: 'var(--accent)',
         'accent-sand': 'var(--accent-sand)',
         'border-subtle': 'var(--border-subtle)',
         terracotta: {
